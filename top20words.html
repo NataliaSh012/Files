@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find top 20 words in webpage</title>
+    <style>
+        * {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+             margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 1vw;
+            color: rgb(54, 53, 53);
+            }
+
+        .heading {
+            letter-spacing: 0.5vw;
+            background: linear-gradient( #09d8fe, #2595bf);
+            color: white;
+            margin: 3vw 0;
+            padding-left: 1vw;
+            }
+        p {
+            padding: 0 0 2vw 0;
+            }
+
+            input {
+                width: 40vw;
+            }
+
+         button[type="submit"] {
+            padding: 0.5vw;
+            width: 8vw;
+            margin: 2.5vw 0;
+            margin-left: 3.5vw;
+            display: inline-block;
+     
+            }
+
+         button[type="submit"]:hover {
+           transform: scale(1.1);
+           font-weight: bold;
+            }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="heading">content manager</h1>
+   
+    <form method="post" action="/submit" method="post" >
+        <p>Input address of web-page and see 20 words that occur there more often</p>
+           
+        <div class="form-group">
+
+                <label for="url">url: </label>
+                <input type="text"  name="url" id="url" placeholder="put your link" >
+
+        </div>
+           
+        <button type="submit" >submit</button>   
+      
+    </form>
+
+</body>
+
+</html>
+
